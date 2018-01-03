@@ -16,7 +16,7 @@ In this particualar modules we are leveraging modules in order to create several
 
 ## Installation
 
-In the machine you are going to be performing the Ansble playbook do the following steps:
+In the machine you are going to be performing the Ansble Playbook(s) do the following steps:
 
     sudo pip install ansible==2.4.0
     
@@ -24,7 +24,7 @@ Verify Ansible was installed correctly by checking the version of code
 
     anisble --version
  
- The output should look like 
+The output should look like 
  
      ansible 2.4.0.0
         config file = None
@@ -40,7 +40,7 @@ If you have git installed, clone the repository
   
 ## Executing the playbook
 
-Once you succesfully clone the file. The last step is to execute the plyabook by running the following command. Make sure you are in the right directory /Playbook/Anisble-ACI
+Once you succesfully clone the repository. The last step is to execute the plyabook by running the following command. Make sure you are in the right directory /Playbook/Anisble-ACI
 
     ansible-playbook -i hosts site.yml
 
