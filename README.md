@@ -7,6 +7,7 @@ Example on how to levarege Ansible modules that were used during TECDCN-2941
 
 In this particualar modules we are leveraging modules in order to create several objects in the ACI fabric. The particular objects that are being created during this demo are:
 
+* Tenant 
 * Tenant VRF
 * Tenant BD
 * Tenant BD Subnet
