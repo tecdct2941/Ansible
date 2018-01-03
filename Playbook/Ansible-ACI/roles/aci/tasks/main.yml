@@ -1,0 +1,57 @@
+---
+# tasks file for aci
+- name: CREATE ACI TENANT VRF
+  aci_vrf:
+    action: post
+    vrf: "{{ vrf_name }}"
+    tenant: "{{ tenant_name }}"
+    hostname: "{{ inventory_hostname }}"
+    username: "{{ user }}"
+    password: "{{ pass }}"
+    use_ssl: no
+
+- name: CREATE ACI TENANT BD
+  aci_bd:
+    action: post
+    tenant: "{{ tenant_name }}"
+    bd: "{{ bd_name }}"
+    vrf: "{{ vrf_name }}"
+    host: "{{ inventory_hostname }}"
+    username: "{{ user }}"
+    password: "{{ pass }}"
+    use_ssl: no
+
+- name: CREATE ACI TENANT BD SUBNET
+  aci_bd_subnet:
+    action: post
+    bd: "{{ bd_name }}"
+    gateway: "{{ gateway_ip }}"
+    mask: "{{ subnet_mask }}"
+    tenant: "{{ tenant_name }}"
+    host: "{{ inventory_hostname }}"
+    username: "{{ user }}"
+    password: "{{ pass }}"
+    use_ssl: no
+
+- name: CREATE ACI TENANT APP PROFILE
+  aci_ap:
+    action: post
+    ap: "{{ app_profile_name }}"
+    tenant: "{{ tenant_name }}"
+    hostname: "{{ inventory_hostname }}"
+    username: "{{ user }}"
+    password: "{{ pass }}"
+    use_ssl: no
+
+- name: CREATE ACI TENANT APP PROFILE EPG
+  aci_epg:
+    action: post
+    epg: "{{ epg_name }}"
+    ap: "{{ app_profile_name }}"
+    tenant: "{{ tenant_name }}"
+    bd: "{{ bd_name }}"
+    hostname: "{{ inventory_hostname }}"
+    username: "{{ user }}"
+    password: "{{ pass }}"
+    use_ssl: no
+    
