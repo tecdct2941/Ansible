@@ -7,12 +7,12 @@ Example on how to levarege Ansible modules that were used during TECDCN-2941
 
 In this particualar modules we are leveraging modules in order to create several objects in the ACI fabric. The particular objects that are being created during this demo are:
 
-* Tenant - http://docs.ansible.com/ansible/latest/list_of_network_modules.html
-* Tenant VRF
-* Tenant BD
-* Tenant BD Subnet
-* Tenant App Profile
-* Tenant App Profile EPG
+* Tenant - http://docs.ansible.com/ansible/latest/aci_tenant_module.html
+* Tenant VRF - http://docs.ansible.com/ansible/latest/aci_vrf_module.html
+* Tenant BD - http://docs.ansible.com/ansible/latest/aci_bd_module.html
+* Tenant BD Subnet - http://docs.ansible.com/ansible/latest/aci_bd_subnet_module.html
+* Tenant App Profile - http://docs.ansible.com/ansible/latest/aci_ap_module.html
+* Tenant App Profile EPG - http://docs.ansible.com/ansible/latest/aci_epg_module.html
 
 ## Installation
 
