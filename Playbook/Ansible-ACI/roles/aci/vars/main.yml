@@ -1,0 +1,9 @@
+---
+# vars file for aci
+tenant_name: TECDCN-2941
+vrf_name: TECDCN-2941-vrf
+bd_name: TECDCN-2941-bd
+gateway_ip: 10.1.1.1
+subnet_mask: 24
+app_profile_name: TECDCN-2941-ap
+epg_name: TECDCN-2941-epg
