@@ -1,7 +1,7 @@
 
 # Ansible ACI
 
-Example on how to levarege Ansible modules that were used during TECDCN-2941
+Example on how to levarege Ansible modules used during TECDCN-2941
 
 ## Requirements
 
