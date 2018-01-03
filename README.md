@@ -14,7 +14,7 @@ Here are the files used during the Ansible demo in TECDCN-2941 in order to creat
 ***************************************************************************************************************
 /home/user/Playbooks/Ansible-ACI/group_vars/all
   
-  ---
+---
 
 ansible_connection: local
 
