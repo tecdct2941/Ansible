@@ -17,9 +17,9 @@ In this particualar modules we are leveraging modules in order to create several
 
 In the machine you are going to be performing the Ansble playbook do the following steps:
 
-  sudo pip install ansible==2.4.0
+    sudo pip install ansible==2.4.0
   
-  git clone https://github.com/luflores/dcnmtoolkit.git
+    git clone https://github.com/luflores/dcnmtoolkit.git
 
 * Python 2.7+
 * [setuptools package](https://pypi.python.org/pypi/setuptools)
