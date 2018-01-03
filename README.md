@@ -1,7 +1,7 @@
 
 # Ansible ACI
 
-Using Ansible modules during TECDCN-2941
+Example on how to levarege Ansible modules that were used during TECDCN-2941
 
 ## Modules
 
@@ -35,8 +35,11 @@ Verify Ansible was installed correctly by checking the version of code
   
 If you have git installed, clone the repository
 
+    git clone https://github.com/tecdct2941/Ansible.git
   
-    git clone https://github.com/luflores/dcnmtoolkit.git
+## Executing the playbook
 
-* Python 2.7+
-* [setuptools package](https://pypi.python.org/pypi/setuptools)
+Once you succesfully clone the file. The last step is to execute the plyabook by running the following command. Make sure you are in the right directory /Playbook/Anisble-ACI
+
+    ansible-playbook -i hosts site.yml
+
