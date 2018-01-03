@@ -1,0 +1,6 @@
+---
+
+ansible_connection: local
+
+user: admin
+pass: cisco.123
